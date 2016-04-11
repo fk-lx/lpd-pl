@@ -1,2 +1,5 @@
 [project]
 name = lpd-pl
+
+[servers.ghpages]
+target = ghpages://fk-lx/lpd-pl
