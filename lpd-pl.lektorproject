@@ -2,4 +2,4 @@
 name = lpd-pl
 
 [servers.ghpages]
-target = ghpages://fk-lx/lpd-pl
+target = ghpages+https://fk-lx/lpd-pl-site
