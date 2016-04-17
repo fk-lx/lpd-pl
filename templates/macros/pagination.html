@@ -1,15 +1,15 @@
 {% macro render_pagination(pagination) %}
   <div class="pagination">
     {% if pagination.has_prev %}
-      <a href="{{ pagination.prev|url }}">&laquo; Previous</a>
+      <a href="{{ pagination.prev|url }}">&laquo; Poprzednia</a>
     {% else %}
-      <span class="disabled">&laquo; Proprzednia</span>
+      <span class="disabled">&laquo; Poprzednia</span>
     {% endif %}
     | {{ pagination.page }} |
     {% if pagination.has_next %}
       <a href="{{ pagination.next|url }}">Następna &raquo;</a>
     {% else %}
-      <span class="disabled">Next &raquo;</span>
+      <span class="disabled">Następna &raquo;</span>
     {% endif %}
   </div>
 {% endmacro %}
