@@ -3,4 +3,4 @@ name = lpd-pl
 locale = pl_PL
 
 [servers.ghpages]
-target = ghpages+https://fk-lx/lpd-pl-site
+target = ghpages+https://fk-lx/lpd-pl-site?cname=pl.linux-presentation-day.org
