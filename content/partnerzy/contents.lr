@@ -1,14 +1,3 @@
-_model: page
----
 title: Partnerzy
 ---
-body:
-
-### Sponsorzy:  
-  Zostań sponsorem i wesprzyj nasze wydarzenie - zapraszamy do [kontaktu](../kontakt).
-
-### Patronaty medialne:  
-  
-[![logotyp OSWorld](osworld-kwadrat.png "OSWorld")](http://osworld.pl)  
-
-[![logotyp LinuxPortal](linuxportal.gif "LinuxPortal")](http://linuxportal.pl)
+_template: page.html

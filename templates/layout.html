@@ -1,32 +1,37 @@
 <!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — lpd-pl</title>
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Welcome{% endblock %} | Tutaj idzie tytuł</title>
+    {% include 'layout/head.html' %}
+</head>
 <body>
-  <header>
-    <img src="/static/logo.300x150.png" />
-    <h2>Linux Presentation Day PL</h2>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}>
-        {% for href, title in [
-          ['/blog', 'Aktualności'],
-          ['/', 'O wydarzeniu'],
-          ['/partnerzy', 'Partnerzy'],
-          ['/przylacz-sie', 'Przyłącz się'],
-          ['/kontakt', 'Kontakt'],
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-    {% block body %}{% endblock %}
-  </div>
-  <footer>
-    
-  </footer>
+
+    {% include 'layout/navbar.html' %}
+
+    {% block header %}
+    {% include 'layout/hero.html' %}
+    {% endblock %}
+
+    <div id="fh5co-main">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8" id="fh5co-content">
+                        <main>
+                            {% block body %}
+                            {% endblock %}
+                        </main>
+                        <div class="fh5co-spacer fh5co-spacer-md"></div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1" id="fh5co-sidebar">
+                        {% include 'layout/sidebar.html' %}
+                    </div>
+                </div>
+            </div>
+            <div class="fh5co-spacer fh5co-spacer-md"></div>
+        </section>
+        {% include 'layout/footer.html' %}
+    </div>
+
+    {% include 'layout/body_bottom.html' %}
 </body>

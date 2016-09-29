@@ -1,0 +1,27 @@
+<!-- START #fh5co-header -->
+<header id="fh5co-header-section" role="header">
+    <div class="container">
+
+        <h1 id="fh5co-logo" class="pull-left">
+            <a class="brand" href="{{ '/' | url }}">
+                <h1><div class="brand-logo"></div>Linux Presentation Day
+                    <br/><small>{{ bag('general', this.alt, 'venue') }}</small>
+                </h1>
+            </a>
+        </h1>
+
+        <nav id="fh5co-menu-wrap" role="navigation">
+            <ul class="sf-menu" id="fh5co-primary-menu">
+                {% for path, label in bag('main-nav', this.alt).iteritems() %}
+                    <li{% if this.is_child_of(path) %} class="active"{% endif
+                        %}><a href="{{ path|url }}">{{ label }}</a></li>
+                {% endfor %}
+                {% if this.alt == 'pl' %}
+                <li><a href="{% block alt_url_en %}{{ '.'|url(alt='en') }}{% endblock %}">[ EN ]</a></li>
+                {% else %}
+                <li><a href="{% block alt_url_pl %}{{ '.'|url(alt='pl') }}{% endblock %}">[ PL ]</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</header>

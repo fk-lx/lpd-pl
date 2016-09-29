@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% from "macros/news.html" import render_post %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="row">
+      <h2>{{ bag('general', this.alt, 'news') }}</h2>
+  <div class="col-md-12">
+      <article>{{ this.body }}</article>
+      <div class="fh5co-spacer fh5co-spacer-xxs"></div>
+      {% set news = site.query('/news', this.alt).all() %}
+      {% for post in news %}
+      {{ render_post(post, true) }}
+      {% endfor %}
+  </div>
+</div>
+{% endblock %}

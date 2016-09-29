@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% from "macros/news.html" import render_post %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+<div class="row">
+  <div class="col-md-12">
+    {{ render_post(this) }}
+  </div>
+</div>
+{% endblock %}
