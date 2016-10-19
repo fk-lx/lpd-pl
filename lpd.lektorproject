@@ -11,3 +11,6 @@ primary = yes
 name = English
 locale = en_US
 url_prefix = /en/
+
+[servers.ghpages]
+target = ghpages+https://fk-lx/lpd-pl-site?cname=pl.linux-presentation-day.org
