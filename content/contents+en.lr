@@ -1,4 +1,6 @@
-title: O wydarzeniu
+_hidden: no
+---
+_template: page.html
 ---
 body:
 
@@ -18,7 +20,7 @@ Miejsca 2017.2
 -----------
 * Warszawa
 * Kraków
-* Wrocław
+* Wrocław - HS WRO
 * Poznań - 10:00 - 14:00 Politechnika Poznańska (WE206, ul. Piotrowo 3) (koordynator Damian Fajfer)
 * Grajewo - 10:00 - 14:00 Zespół Szkół nr 2 im. 9. PSK (Sala nr 1, ul. Wojska Polskiego 84) (koordynator Marcin Bobrowski)
 * [Dołącz do nas i zaproponuj organizację swojego lokalnego LPD!](https://goo.gl/forms/zu74NopV27QdwG0z2)
@@ -26,8 +28,6 @@ Miejsca 2017.2
 Miejsca 2017.1
 -----------
 * Gdańsk - 11:00 - 18:00 [Biblioteka publiczna w Centrum Handlowym Manhattan, ul. Grunwaldzka, II pietro.](http://www.wbpg.org.pl/biblioteka_manhattan) (koordynator *Dawid Popiela*)
-* W pozostałych miastach impreza planowana jest na drugą połowę czerwca
-
 
 Miejsca 2016.2
 -----------
@@ -42,6 +42,4 @@ Miejsca 2016.1
   * Katowice, [Klubokawiarnia "Drzwi zwane koniem"](http://drzwizwanekoniem.pl/) (koordynator *Filip Kłębczyk*)
   * Trójmiasto, [Biblioteka Publiczna w C. H. Manhattan](http://www.wbpg.org.pl/biblioteka_manhattan) (koordynator *Dawid Popiela*)
 ---
-_hidden: no
----
-_template: page.html
+title: O wydarzeniu
