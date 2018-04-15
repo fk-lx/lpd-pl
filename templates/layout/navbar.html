@@ -12,7 +12,7 @@
 
         <nav id="fh5co-menu-wrap" role="navigation">
             <ul class="sf-menu" id="fh5co-primary-menu">
-                {% for path, label in bag('main-nav', this.alt).iteritems() %}
+                {% for path, label in bag('main-nav', this.alt).items() %}
                     <li{% if this.is_child_of(path) %} class="active"{% endif
                         %}><a href="{{ path|url }}">{{ label }}</a></li>
                 {% endfor %}
